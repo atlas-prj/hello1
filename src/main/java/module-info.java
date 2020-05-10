@@ -4,5 +4,5 @@ module ru.atlas.hello1 {
 
     opens ru.atlas.hello1 to javafx.fxml;
     exports ru.atlas.hello1;
-    requires org.jfxtras.styles.jmetro;
+    //requires org.jfxtras.styles.jmetro;
 }
