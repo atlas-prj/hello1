@@ -1,4 +1,4 @@
-package ru.atlas.hello1;
+package ru.atlas.tasks;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -10,8 +10,6 @@ import java.io.IOException;
 import jfxtras.styles.jmetro.JMetro;
 import jfxtras.styles.jmetro.Style;
 
-//import jfxtras.styles.jmetro.*;
-
 /**
  * JavaFX App
  */
@@ -21,11 +19,12 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("primary"), 640, 480);
+        scene = new Scene(loadFXML("SimulationController"), 640, 480);
+        stage.setScene(scene);
 //        JMetro jMetro = new JMetro(Style.LIGHT);
 //        jMetro.setScene(scene);        
-        stage.setScene(scene);
         stage.show();
+
     }
 
     static void setRoot(String fxml) throws IOException {
